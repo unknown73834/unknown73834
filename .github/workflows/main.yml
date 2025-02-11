@@ -19,10 +19,9 @@ jobs:
       - name: Generate Snake Game from GitHub Contribution Grid
         uses: Platane/snk@v3.2.0
         with:
-          github_user: ${{ github.repository_owner }}
-          output: 'snake.svg' # Output file name
-          color: '#00ff00' # Customize the color if needed
-          # You can add more options here as needed
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            'snake.svg'
 
       - name: Upload Snake Game
         uses: actions/upload-artifact@v4
