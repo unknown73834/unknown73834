@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Generate Snake Game from GitHub Contribution Grid
         uses: Platane/snk@v3.2.0
@@ -25,7 +25,7 @@ jobs:
           # You can add more options here as needed
 
       - name: Upload Snake Game
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: snake-game
           path: snake.svg
